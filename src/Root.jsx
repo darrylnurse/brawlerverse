@@ -13,7 +13,7 @@ export default function Root() {
   }
 
   return (
-    <div className={"h-screen bg-[url('./assets/brawl-stars-map.jfif')] bg-cover w-screen bg-no-repeat"}>
+    <div className={"h-screen bg-[url('/public/assets/brawl-stars-map.jfif')] bg-cover w-screen bg-no-repeat"}>
       <div className={"p-3 gap-3 h-full w-full flex flex-row backdrop-blur-lg"}>
         <aside className={`${asideOpen ? "w-[7.5%]" : "w-[0%]"} text-white rounded-md`}>
           { asideOpen &&
@@ -42,7 +42,7 @@ export default function Root() {
                 onClick={handleAside}
             >
               <img
-                src={"/src/assets/brawl-logo.png"}
+                src={"/public/assets/brawl-logo.png"}
                 alt={"brawl-logo"}
                 className={`w-full h-full cursor-pointer hover:scale-[105%] active:scale-[95%] select-none ${spin}`}
               />
@@ -53,7 +53,7 @@ export default function Root() {
               <img
                   className={"w-full h-full"}
                   alt={"el-mejor"}
-                  src={"/src/assets/el-primo-run.gif"}
+                  src={"/public/assets/el-primo-run.gif"}
               />
             </div>
           </header>

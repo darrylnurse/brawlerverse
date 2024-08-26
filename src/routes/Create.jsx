@@ -60,6 +60,7 @@ export default function Create(){
                   onChange={handleChange}
                   autoComplete={'off'}
                   className={inputStyle}
+                  placeholder={"What is their name?"}
               />
             </div>
 
@@ -82,11 +83,11 @@ export default function Create(){
               Description
             </label>
             <textarea
-                name={"url"}
+                name={"description"}
                 onChange={handleChange}
                 autoComplete={'off'}
-                className={"min-h-[3rem] text-gray-500 rounded-md p-2 shadow-sm shadow-black"}
-                defaultValue={"Describe this Content Creator."}
+                className={"min-h-[3rem] rounded-md p-2 shadow-sm shadow-black"}
+                placeholder={"Describe this Content Creator."}
             />
           </div>
 

@@ -5,6 +5,8 @@ import {AsideContext} from "../Root.jsx";
 // eslint-disable-next-line react/prop-types
 export default function BrawlCard({ id, name, description, imageUrl }){
 
+  console.log(imageUrl);
+
   const DESCRIPTION_CUTOFF = 100;
 
   // crop desc
@@ -35,7 +37,7 @@ export default function BrawlCard({ id, name, description, imageUrl }){
         onClick={handleClick}
       >
         <img
-            src={imageUrl || "/src/assets/spikey.jpg"}
+            src={imageUrl || "/public/assets/spikey.jpg"}
             alt={"brawlstar-image"}
             className={"w-full h-full object-cover"}
         />
