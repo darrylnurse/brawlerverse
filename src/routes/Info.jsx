@@ -25,7 +25,7 @@ export default function Info(){
           onClick={() => navigate("edit")}
         >
           <img
-            src={'/editor-logo.png'}
+            src={'/assets/editor-logo.png'}
             alt={'editor-logo'}
             className={"w-[3rem] h-[3rem] cursor-pointer absolute bottom-0 select-none hover:scale-[105%] active:scale-[95%]"}
           />

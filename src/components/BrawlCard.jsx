@@ -37,7 +37,7 @@ export default function BrawlCard({ id, name, description, imageUrl }){
         onClick={handleClick}
       >
         <img
-            src={imageUrl || "./assets/spikey.jpg"}
+            src={imageUrl || "/assets/spikey.jpg"}
             alt={"brawlstar-image"}
             className={"w-full h-full object-cover"}
         />
