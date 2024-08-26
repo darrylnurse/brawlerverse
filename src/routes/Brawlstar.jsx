@@ -49,7 +49,7 @@ export default function Brawlstar(){
     <div className={"w-full flex flex-col rounded-lg p-4 px-[15rem] h-full"}>
       <div className={"overflow-hidden rounded-md h-[30%]"}>
         <img
-            src={star.bannerUrl || "/public/assets/brawl-banner.jpg"}
+            src={star.bannerUrl || "./assets/brawl-banner.jpg"}
             alt={"star-banner"}
             className={"w-full h-full"}
         />
@@ -57,7 +57,7 @@ export default function Brawlstar(){
       <div className={"flex flex-row h-[70%] items-center"}>
         <div className={" flex justify-start items-center"}>
           <img
-              src={star.imageUrl || "/public/assets/spikey.jpg"}
+              src={star.imageUrl || "./assets/spikey.jpg"}
               alt={"star-image"}
               className={"h-[15rem] min-w-[17.5rem] rounded-md"}
           />
