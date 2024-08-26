@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+@keyframes clockwise {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes counter-clockwise {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
+
+.spin-clockwise {
+    animation-name: clockwise;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.spin-counter-clockwise {
+    animation-name: counter-clockwise;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.text-shadow {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+@keyframes loading {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
+
+.load-spinner {
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
